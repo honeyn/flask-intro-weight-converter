@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block header %}<title>HoneyB's</title>{% endblock %}
+{% block body %}
+<h1>Weight Converter</h1>
+<form action="/" method="POST">
+    <label for="weight">Weight:</label><br>
+    <input type="text" id="weight" name="weight"><br>
+    <select name="unit" id="unit">
+        <option value="pounds">Pounds</option>
+        <option value="kilograms">Kilograms</option>
+    </select>
+    <input type="submit" value="Get Weight">
+</form>
+{{ weight }}
+{{ unit }}
+{% endblock %}
